@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+}
+
+body {
+    font-family: "Arial";
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/*TOP NAVIGATION BAR*/
+.top-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-bar li {
+    list-style: none;
+    margin: 0.625rem;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.top-bar li img.apps {
+    width: 1.875rem;
+}
+
+.top-bar li img.apps:hover {
+    cursor: pointer;
+}
+
+.top-bar li img.perfil {
+    border-radius: 50%;
+    width: 1.875rem;
+}
+
+.top-bar li img.perfil:hover {
+    cursor: pointer;
+}
+
+/*SEARCH SECTION*/
+.busqueda img.logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 6.5rem;
+}
+
+.busqueda {
+    padding-bottom: 124px;
+}
+
+input#buscador {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    width: 35rem;
+    border-radius: 5rem;
+    border: solid lightgrey 0.5px;
+}
+
+input[type=search] {
+    background-image: url(../images/voice-search.png);
+    background-position: 520px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+input[type=search]:focus, textarea:focus {
+    outline: none;
+}
+
+input[type=search]:hover {
+    -webkit-box-shadow: 17px 18px 19px -18px rgba(133,133,133,0.46);
+-moz-box-shadow: 17px 18px 19px -18px rgba(133,133,133,0.46);
+box-shadow: 17px 18px 19px -18px rgba(133,133,133,0.46);
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botones button {
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background: #ebebeb;
+    color: grey;
+}
+
+.botones button:hover {
+    border: solid gray 0.5px;
+    color: black;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 26px;
+    background: #ebebeb;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer-menu-derecha ul {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0px;
+}
+
+footer .footer-menu-derecha li {
+    list-style: none;
+    margin: 5px;
+}
+
+footer .footer-menu-derecha a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+footer .footer-menu-izquierda ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+footer .footer-menu-izquierda li {
+    list-style: none;
+    margin: 5px;
+}
+
+footer .footer-menu-izquierda a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
